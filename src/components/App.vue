@@ -1,6 +1,7 @@
 <template>
     <main>
         <p>{{ msg }}</p>
+        <router-view></router-view>
     </main>
 </template>
 

@@ -5,10 +5,16 @@
 // 在浏览器中直接使用, 相比咱们以往的方式性能会有提升.
 import Vue from 'Vue';
 import VueRouter from 'vue-router';
+import MintUi from 'mint-ui';
+import 'mint-ui/lib/style.css';
 // 手动启用Vue插件, 在以前VueRouter插件会自动调用use, 
 // 但是我们使用了模块化之后, window下没有Vue全局变量, 插件就无法自调use了
 Vue.use(VueRouter);
-
+Vue.use(MintUi);
+// 公共组件库
+import Common from '../components/common'
+Vue.use(Common);
+// 自己写的vue组件
 import App from '../components/App.vue';
 import Home from '../components/home/home.vue';
 import List from '../components/list/list.vue';

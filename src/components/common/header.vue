@@ -1,6 +1,7 @@
 <template>
-    <div>商品</div>
+  <mt-header fixed title="小买卖"></mt-header>
 </template>
+
 <script>
     
 </script>

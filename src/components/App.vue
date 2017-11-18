@@ -1,7 +1,9 @@
 <template>
     <main>
+        <app-header></app-header>
         <p>{{ msg }}</p>
         <router-view></router-view>
+
     </main>
 </template>
 

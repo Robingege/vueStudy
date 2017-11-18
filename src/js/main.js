@@ -7,29 +7,26 @@ import Vue from 'Vue';
 import VueRouter from 'vue-router';
 import MintUi from 'mint-ui';
 import 'mint-ui/lib/style.css';
+import 'mui/dist/css/mui.css';
+import 'mui/examples/hello-mui/css/icons-extra.css';
 // 手动启用Vue插件, 在以前VueRouter插件会自动调用use, 
 // 但是我们使用了模块化之后, window下没有Vue全局变量, 插件就无法自调use了
 Vue.use(VueRouter);
 Vue.use(MintUi);
+
+import axios from 'axios';
+Vue.prototype.axios = axios;
 // 公共组件库
 import Common from '../components/common'
 Vue.use(Common);
 // 自己写的vue组件
 import App from '../components/App.vue';
-import Home from '../components/home/home.vue';
-import List from '../components/list/list.vue';
-   // 以前这里写的是template与methods等等东西,
-    // 现在这些代码都统一放在了App.vue里面来写, 
-    // App.vue就是咱们项目的根组件
+// 以前这里写的是template与methods等等东西,
+// 现在这些代码都统一放在了App.vue里面来写, 
+// App.vue就是咱们项目的根组件
 new Vue({
-    el:'#app',
-    render(c){
+    el: '#app',
+    render(c) {
         return c(App);
-    },
-    router : new VueRouter({
-        routes: [
-            { path:'/',component : Home},
-            { path:'/list',component : List}
-        ]
-    })
+    }
 })

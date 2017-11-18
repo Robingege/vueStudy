@@ -1,26 +1,21 @@
 <template>
     <main>
         <app-header></app-header>
-        <p>{{ msg }}</p>
-        <router-view></router-view>
-
+        <app-home></app-home>
+        <app-footer></app-footer>
     </main>
 </template>
 
 <script>
-    export default {
-        data(){
-            return {
-                msg:'测试vue文件是否可用'
-            }
+    import Home from "./home/home.vue";
+        export default {
+        components: {
+            "app-home": Home
         }
-    }
+    };
 </script>
 
-<style>
-    p{
-        font-size: 30px;
-        color: yellow;
-    }
+<style lang="less" scoped>
+ 
 </style>
 

@@ -22,7 +22,8 @@ Vue.use(Common);
 // 自己写的vue组件
 import App from '../components/App.vue';
 import routerComfig from '../router';
-
+// 全局less
+import '../less/index.less';
 
 // 导入过滤器
 import Filter from '../filter';

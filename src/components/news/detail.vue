@@ -48,6 +48,10 @@
             border-top: 2px #9b9b9b solid;
             margin-top: 18px;
             padding-top: 8px;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
         }
     }
 </style>

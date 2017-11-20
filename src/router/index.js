@@ -3,6 +3,8 @@ import NL from '../components/news/list.vue';
 import ND from '../components/news/detail.vue';
 import PhotoList from '../components/photo/list.vue';
 import PhotoDetail from '../components/photo/detail.vue';
+import GoodsList from '../components/goods/list.vue';
+import GoodsDetail from '../components/goods/detail.vue';
 export default {
     routes:[
         {path:'/',redirect: '/index'},
@@ -13,5 +15,8 @@ export default {
         // 图片
         {name:'pl', path : '/photo/list/:id',component:PhotoList},  
         {name:'pd', path : '/photo/detail/:id',component:PhotoDetail},  
+        // 商品
+        {name:'gl', path : '/goods/list',component:GoodsList},  
+        {name:'gd', path : '/goods/detail/:id',component:GoodsDetail},  
     ]
 }

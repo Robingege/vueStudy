@@ -21,12 +21,19 @@ import Common from '../components/common'
 Vue.use(Common);
 // 自己写的vue组件
 import App from '../components/App.vue';
+import routerComfig from '../router';
+
+
+// 导入过滤器
+import Filter from '../filter';
+Vue.use(Filter);
 // 以前这里写的是template与methods等等东西,
 // 现在这些代码都统一放在了App.vue里面来写, 
 // App.vue就是咱们项目的根组件
-new Vue({
+var vm = new Vue({
     el: '#app',
     render(c) {
         return c(App);
-    }
+    },
+    router : new VueRouter( routerComfig )
 })

@@ -1,18 +1,13 @@
 <template>
     <main>
         <app-header></app-header>
-        <app-home></app-home>
+        <router-view></router-view>
         <app-footer></app-footer>
     </main>
 </template>
 
 <script>
-    import Home from "./home/home.vue";
-        export default {
-        components: {
-            "app-home": Home
-        }
-    };
+   
 </script>
 
 <style lang="less" scoped>

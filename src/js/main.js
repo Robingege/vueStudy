@@ -9,11 +9,12 @@ import MintUi from 'mint-ui';
 import 'mint-ui/lib/style.css';
 import 'mui/dist/css/mui.css';
 import 'mui/examples/hello-mui/css/icons-extra.css';
+import VuePP from 'vue-picture-preview';
 // 手动启用Vue插件, 在以前VueRouter插件会自动调用use, 
 // 但是我们使用了模块化之后, window下没有Vue全局变量, 插件就无法自调use了
 Vue.use(VueRouter);
 Vue.use(MintUi);
-
+Vue.use(VuePP);
 import axios from 'axios';
 Vue.prototype.axios = axios;
 // 公共组件库

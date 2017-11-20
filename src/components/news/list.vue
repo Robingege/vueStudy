@@ -23,7 +23,7 @@
         },
         methods: {
             getNewsList(){
-                this.axios('http://vue.studyit.io/api/getnewslist')
+                this.axios.get('http://vue.studyit.io/api/getnewslist')
                 .then( res => {
                     this.newsList = res.data.message;
                     // console.log(this.newsList);

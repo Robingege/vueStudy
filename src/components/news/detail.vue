@@ -19,7 +19,7 @@
         methods: {
             getNewsDetail(){
                 this.id = this.$route.params.id;
-                this.axios(`http://vue.studyit.io/api/getnew/${this.id}`)
+                this.axios.get(`http://vue.studyit.io/api/getnew/${this.id}`)
                 .then( res => {
                     this.newsDetail = res.data.message;
                     console.log(this.newsDetail);

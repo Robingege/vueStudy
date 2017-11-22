@@ -1,0 +1,6 @@
+img {
+  width: 100%  !important;
+}
+.mui-card-content-inner img {
+  height: auto !important;
+}

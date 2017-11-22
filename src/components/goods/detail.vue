@@ -103,7 +103,6 @@ import storage from '../../js/storage.js';
       this.getGoodsDetail();
       this.getLunbo();
       this.getTuWen();
-      this.setCount();
       
     }
   }

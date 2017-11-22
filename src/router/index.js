@@ -5,6 +5,7 @@ import PhotoList from '../components/photo/list.vue';
 import PhotoDetail from '../components/photo/detail.vue';
 import GoodsList from '../components/goods/list.vue';
 import GoodsDetail from '../components/goods/detail.vue';
+import ShopCart from '../components/shopcart/shopcart.vue';
 export default {
     routes:[
         {path:'/',redirect: '/index'},
@@ -18,5 +19,8 @@ export default {
         // 商品
         {name:'gl', path : '/goods/list',component:GoodsList},  
         {name:'gd', path : '/goods/detail/:id',component:GoodsDetail},  
+
+        {name:'sc', path : '/shopcart',component:ShopCart},  
+
     ]
 }
